@@ -1,0 +1,17 @@
+@import '~assets/scss/mixins';
+
+.g-tabbar {
+  height: $tabbar-height;;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+
+  &-item {
+    flex: 1;
+    @include flex-center(column);
+    .iconfont {
+      font-size: $icon-font-size;
+      margin-bottom: 4px;
+    }
+  }
+}
